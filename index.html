@@ -13,7 +13,12 @@
 
 <header class="header" id="header">
   <div class="header__inner">
-    <a href="#top" class="logo">POCKET PRESS</a>
+    <a href="#top" class="logo-brand">
+      <span class="logo-frame img-placeholder" data-placeholder="Logo">
+        <img src="logo.jpeg" alt="Logo Pocket Press" class="logo-frame__img" onerror="this.style.display='none'">
+      </span>
+      <span class="logo">POCKET PRESS</span>
+    </a>
     <a href="#contacto" class="btn btn--outline">CONTACTO</a>
   </div>
 </header>
@@ -155,10 +160,10 @@
 
   <div class="section__grid section__grid--reverse">
     <div class="video-block reveal" data-reveal data-reveal-fx="left">
-      <div class="video-frame">
+      <div class="video-frame video-frame--reel">
         
         <iframe
-          src="https://youtube.com/shorts/CLrr3kX_W_g?si=NM_L7SbsxtDp8AlO"
+          src="https://www.instagram.com/reel/DbAsY8ItoX7/embed"
           title="Historia de Pocket Press"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -176,7 +181,7 @@
       </p>
       <p class="paragraph reveal" data-reveal data-reveal-delay="1">
         Nuestro proyecto nace de la observación directa de las necesidades de comerciantes y
-        emprendedores textiles, y busca ofrecer soluciones prácticas, accesibles y modernas.
+        emprendedores textiles; buscamos ofrecer soluciones prácticas, accesibles y modernas.
       </p>
 
       <div class="divider reveal" data-reveal></div>
@@ -199,8 +204,7 @@
     Estampa que se <span class="heading__accent">lleva contigo</span>
   </h2>
   <p class="paragraph paragraph--wide reveal" data-reveal data-reveal-delay="2">
-    Cada Pocket Press viene acompañada de piezas pensadas para mostrar
-    tu marca desde el primer minuto. Estos son algunos de los productos
+    Estos son algunos de los productos
     que puedes llevar contigo.
   </p>
 
@@ -233,7 +237,7 @@
     Un programa pensado <span class="heading__accent">para ti</span>
   </h2>
   <p class="paragraph paragraph--wide reveal" data-reveal data-reveal-delay="2">
-    Mientras más creas con tu Pocket Press, más beneficios desbloqueas.
+    Una vez compras con nosotros, obtienes acceso a beneficios exclusivos.
     Así funciona nuestro programa de fidelización.
   </p>
 
@@ -244,7 +248,7 @@
       </span>
       <h3 class="loyalty-card__title">Puntos por compra</h3>
       <p class="loyalty-card__text">
-        Cada pedido suma puntos canjeables por placas, mangos y accesorios
+        Cada compra suma puntos canjeables por mangos y accesorios
         adicionales para tu estampadora.
       </p>
     </div>
@@ -283,8 +287,7 @@
       ¿Lista para tu primer <span class="heading__accent">estampado</span>?
     </h2>
     <p class="cta__text reveal" data-reveal data-reveal-delay="2">
-      Escríbenos directamente. Respondemos en menos de 24 horas y te
-      asesoramos sin compromiso.
+      No dudes en contactarnos, le respondemos con brevedad.
     </p>
     <p class="cta__phone reveal" data-reveal data-reveal-delay="3">
       <svg class="icon icon--phone" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 
@@ -292,14 +295,20 @@
         0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
       +51 945 568 895
     </p>
-    <a href="https://wa.me/51945568895" target="_blank" rel="noopener" class="btn btn--whatsapp reveal" data-reveal data-reveal-delay="4">
-      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.21A9 
-        9 0 1 0 12 3z" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 8.7c.15-.4.5-.4.8-.4h.5c.2 0 .45 0 .6.4.2.5.6 1.5.65 1.6.05.15.1.3 
-        0 .5-.1.2-.15.3-.3.45-.15.15-.3.3-.15.6.15.3.7 1.2 1.5 1.9 1 .9 1.8 1.15 2.1 1.3.3.15.5.1.65-.05.2-.2.7-.8.9-1.05.2-.25.4-.2.65-.1.25.1 
-        1.6.75 1.85.9.25.15.45.2.5.35.1.2.1 1-.25 1.5-.35.5-1.55 1-2.15 1-.6 0-1.9-.2-3.7-1.35-2.15-1.35-3.4-3.4-3.55-3.6-.15-.2-1.15-1.55-1.15-2.9 
-        0-1.35.7-2 .95-2.3z" fill="currentColor"/></svg>
-      ESCRIBIR POR WHATSAPP
-    </a>
+    <div class="cta__actions">
+      <a href="https://wa.me/51945568895" target="_blank" rel="noopener" class="btn btn--whatsapp reveal" data-reveal data-reveal-delay="4">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.21A9 
+          9 0 1 0 12 3z" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 8.7c.15-.4.5-.4.8-.4h.5c.2 0 .45 0 .6.4.2.5.6 1.5.65 1.6.05.15.1.3 
+          0 .5-.1.2-.15.3-.3.45-.15.15-.3.3-.15.6.15.3.7 1.2 1.5 1.9 1 .9 1.8 1.15 2.1 1.3.3.15.5.1.65-.05.2-.2.7-.8.9-1.05.2-.25.4-.2.65-.1.25.1 
+          1.6.75 1.85.9.25.15.45.2.5.35.1.2.1 1-.25 1.5-.35.5-1.55 1-2.15 1-.6 0-1.9-.2-3.7-1.35-2.15-1.35-3.4-3.4-3.55-3.6-.15-.2-1.15-1.55-1.15-2.9 
+          0-1.35.7-2 .95-2.3z" fill="currentColor"/></svg>
+        ESCRIBIR POR WHATSAPP
+      </a>
+      <a href="https://www.instagram.com/pocke_tpress/" target="_blank" rel="noopener" class="btn btn--instagram reveal" data-reveal data-reveal-delay="5">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg>
+        SÍGUENOS EN INSTAGRAM
+      </a>
+    </div>
   </div>
 </section>
 

@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  
   document.querySelectorAll('[data-reveal-delay]').forEach(el => {
     el.style.setProperty('--d', el.getAttribute('data-reveal-delay'));
   });
@@ -25,10 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealEls.forEach(el => observer.observe(el));
   } else {
-  
+    
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
 
+  
   const header = document.getElementById('header');
   const onScroll = () => {
     if (window.scrollY > 12) {
@@ -41,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  
   const progressBar = document.getElementById('progressBar');
   function updateProgressBar() {
     const scrollTop = window.scrollY;
@@ -49,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (progressBar) progressBar.style.width = pct + '%';
   }
 
+  
   const statNumbers = document.querySelectorAll('.stat__number[data-count]');
 
   function animateCount(el) {
@@ -59,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function tick(now) {
       const progress = Math.min((now - start) / duration, 1);
-      // easeOutCubic
+      
       const eased = 1 - Math.pow(1 - progress, 3);
       const value = Math.round(target * eased);
       el.textContent = value + suffix;
@@ -89,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
